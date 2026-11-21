@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>Giỏ hàng</title>
+  <meta charset="UTF-8">
+  <link href="images/LOGO.png" rel="icon" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="mystyle.css" type="text/css" rel="stylesheet">
+  <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body onload="hienthisp()">
+  <header>
+    <a href="trangchu.html">
+      <img src="images/LOGO.png" id="logo">
+    </a>
+    <div class="haidong">
+      <div class="search-box">
+        <input type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
+        <button>Tìm kiếm</button>
+      </div>
+      <nav class="menu">
+        <a href="trangchu.html">Trang chủ</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="sanpham.html">Sản phẩm</a>
+        <a href="dangnhap.html">Đăng nhập</a>
+        <a href="dangky.html">Đăng ký</a>
+        <a href="lienhe.html">Liên hệ</a>
+      </nav>
+    </div>
+    <div class="dthoai">
+      <a href="lienhe.html" id="dthoai"><i class="fa-solid fa-phone-volume"></i></a>
+    </div>
+    <div class="call">
+      <a href="lienhe.html" id="call"><b>0888 668 998</b></a>
+      <a href="lienhe.html" id="call"><br>Hotline tư vấn miễn phí</a>
+    </div>
+    <div class="shop">
+      <a href="giohang.html" id="shopee"><i class="fa-solid fa-bag-shopping"></i><button class="slsp">0</button></a>
+    </div>
+  </header>
+
+  <main class="addcart">
+    <div class="tieudebang">
+      <h1>CHI TIẾT ĐƠN HÀNG</h1>
+    </div>
+    <table class="bangcart">
+      <thead class="headtable">
+        <tr>
+          <th width="20%">Hình SP </th>
+          <th width="30%">Tên SP</th>
+          <th width="15%">Số Lượng</th>
+          <th width="20%">Giá</th>
+          <th width="20%">Thành Tiền</th>
+          <th width="5%">Xóa</th>
+        </tr>
+      </thead>
+
+      <tbody class="bodytable">
+
+      </tbody>
+
+      <tfoot class="foottable">
+        <tr>
+          <td colspan="6" id="thanhtien"> <b>Tổng thành tiền: </b><a id="tongtienall">0</a></td>
+        </tr>
+        <tr>
+          <td colspan="6" class="thanhtoan">
+            <button id="nutthanhtoan" onclick="xacnhan()">Xác Nhận Thanh Toán</button>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <footer>
+    <div class="page">
+      <div class="camon">
+        <a href="trangchu.html"><img src="images/logocuoi.png" id="logocuoi"></a>
+        <p>Đại Việt Gốm Sứ xin gửi lời tri ân sâu sắc đến Quý khách
+          đã tin tưởng và lựa chọn chúng tôi. Từng sản phẩm gốm là
+          kết tinh của đất mẹ, bàn tay nghệ nhân và tinh thần dân
+          tộc. Và, chúng tôi tự hào khi được cùng quý khách giữ gìn
+          những giá trị đẹp đẽ ấy trong cuộc sống hiện đại.</p>
+      </div>
+      <div class="phone">
+        <h2>Thông Tin Liên Hệ</h2>
+        <a><i class="fa-solid fa-phone-volume" id="call"></i> Điện thoại: 0888 668 998<br></a>
+        <a><i class="fa-solid fa-envelope" id="mail"></i> Email: daivietgomsu@gmail.com<br></a>
+        <a><i class="fa-solid fa-map-location-dot" id="diachi"></i> Địa chỉ: Số 49c, 30/4, Hưng Lợi, Ninh Kiều,
+          Thành Phố Cần Thơ<br></a>
+        <a onclick="thongbao()"><img src="images/dathongbao.png" id="dathongbao"></a>
+      </div>
+      <div class="sitemap">
+        <h2>Sitemap</h2>
+        <a href="trangchu.html">Trang chủ<br></a>
+        <a href="gioithieu.html">Giới thiệu<br></a>
+        <a href="sanpham.html">Sản phẩm<br></a>
+        <a href="giohang.html">Giỏ hàng<br></a>
+        <a href="dangnhap.html">Đăng nhập<br></a>
+        <a href="dangky.html">Đăng ký<br></a>
+        <a href="lienhe.html">Liên hệ<br></a>
+      </div>
+    </div>
+    <div class="cuoitrang">
+      <hr>&copy;2025. Đại Việt Gốm Sứ chuyên cung cấp sản phẩm mỹ nghệ cao cấp
+      <a class="facebook"><i class="fa-brands fa-facebook"></i> </a>
+      <a class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+
+    <a href="#" class="back"><i class="fa-solid fa-circle-up"></i></a>
+  </footer>
+</body>
+
+</html>

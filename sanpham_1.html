@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sản phẩm</title>
+    <meta charset="UTF-8">
+      <link rel="shortcut icon" type="image/vnd.microsoft" href="images/favicon.png">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <header>
+        <a href="trangchu.html">
+            <img src="images/LOGO.png" id="logo">
+        </a>
+        <div class="haidong">
+            <div class="search-box">
+                <input type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
+                <button>Tìm kiếm</button>
+            </div>
+            <nav class="menu">
+                <a href="trangchu.html">Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="sanpham.html">Sản phẩm</a>
+                <a href="dangnhap.html">Đăng nhập</a>
+                <a href="dangky.html">Đăng ký</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </nav>
+        </div>
+        <div class="dthoai">
+            <a href="lienhe.html" id="dthoai"><i class="fa-solid fa-phone-volume"></i></a>
+        </div>
+        <div class="call">
+            <a href="lienhe.html" id="call"><b>0888 668 998</b></a>
+            <a href="lienhe.html" id="call"><br>Hotline tư vấn miễn phí</a>
+        </div>
+        <div class="shop">
+            <a href="giohang.html" id="shopee"><i class="fa-solid fa-bag-shopping"></i><button
+                    class="slsp">0</button></a>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="sanpham">
+        <div class="control">
+            <button onclick="locsp('all')">All</button>
+            <button onclick="locsp('lohoa')">Lọ Hoa</button>
+            <button onclick="locsp('batdia')">Bát Đĩa</button>
+            <button onclick="locsp('khaytra')">Khay Trà</button>
+            <button onclick="locsp('phongthuy')">Phong Thủy</button>
+            <button onclick="locsp('tuonggom')">Tượng Gốm</button>
+        </div>
+        <section class="sp lohoa">
+            <div>
+                <img src="images/lohoa/binh-hoa-trang-tri-tai-loc_11052020110347.jfif">
+                <h1>Bình hoa trang trí tài lộc</h1>
+                <p>
+                    300.000đ
+                    <s>350.000đ</s><span> -14%</span>
+                </p>
+                <button class="addgiohang" data-id="1">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img
+                    src="images/lohoa/lo-hoa-bat-trang-men-hoa-bien-xanh-dai-duong-dang-gio-cua-4-canh_02022021084119.jpg">
+                <h1>Lọ hoa Bát Tràng men hỏa biến dáng giỏ cua 4 cạnh</h1>
+                <p>
+                    395.000đ
+                </p>
+                <button class="addgiohang" data-id="2">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/lohoa/lo-hoa-moc-nau-bat-trang-trang-tri-decor-dang-vo-cao-29cm_12052024084158.jpg">
+                <h1>Lọ hoa mộc nâu Bát Tràng trang trí dáng vò cao 29cm</h1>
+                <p>
+                    280.000đ
+                    <s>450.000đ</s><span> -38%</span>
+                </p>
+                <button class="addgiohang" data-id="3">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/lohoa/lo-hoa-gom-bat-trang-ba-co-gai-bac-trung-nam_11042020045818.jpg">
+                <h1>Lọ hoa gốm Bát Tràng ba cô gái Bắc Trung Nam</h1>
+                <p>
+                    480.000đ
+                </p>
+                <button class="addgiohang" data-id="4">Thêm vào giỏ hàng</button>
+            </div>
+        </section>
+
+
+
+        <section class="sp batdia">
+            <div>
+                <img src="images/batdia/set-bat-dia-hoa-sen-bat-trang-cao-cap_16042024035636.jpg">
+                <h1>Bộ bát thắp hương hoa sen trắng cao cấp 7 món</h1>
+                <p>
+                    1.450.000đ
+                    <s>1.500.000đ</s><span> -3%</span>
+                </p>
+                <button class="addgiohang" data-id="5">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/batdia/bat-dung-ga-cung-ve-hoa-sen-xanh_12082022082945.jpg">
+                <h1>Bát đựng gà cúng vẽ hoa sen xanh</h1>
+                <p>
+                    450.000đ
+                </p>
+                <button class="addgiohang" data-id="6">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/batdia/bo-6-bat-an-com-bat-trang-men-kem-ve-hoa-anh-dao_05082020021043.jpg">
+                <h1>Bộ 6 bát ăn cơm Bát Tràng men kèm vẽ hoa anh đào</h1>
+                <p>
+                    190.000đ
+                </p>
+                <button class="addgiohang" data-id="7">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/batdia/bo_bat_dia_chu_S.jpg">
+                <h1>Bộ bát đĩa hình chữ S bản đồ Việt Nam</h1>
+                <p>
+                    510.000đ
+                </p>
+                <button class="addgiohang" data-id="8">Thêm vào giỏ hàng</button>
+            </div>
+        </section>
+
+
+
+        <section class="sp khaytra">
+            <div>
+                <img src="images/khaytra/am_tra_tu_sa.jpg">
+                <h1>Bộ ấm trà tử sa Bát Tràng Âu Lạc 14 sản phẩm</h1>
+                <p>
+                    630.000đ
+                </p>
+                <button class="addgiohang" data-id="9">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/khaytra/am_chen_gia_co.jpg">
+                <h1>Bộ bình uống nước sứ Bát Tràng vẽ hoa sen</h1>
+                <p>
+                    800.000đ
+                </p>
+                <button class="addgiohang" data-id="10">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/khaytra/am-chen-giang-tay-chuon_22072020042132.jpg">
+                <h1>Bộ ấm chén men hỏa biến chuồn dáng Giang Tây</h1>
+                <p>
+                    1.200.000đ
+                </p>
+                <button class="addgiohang" data-id="11">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/khaytra/am_chen_Bat_Trang.jpg">
+                <h1>Bộ Ấm Chén Bát Tràng Phú Quý đào hồng</h1>
+                <p>
+                    416.000đ
+                </p>
+                <button class="addgiohang" data-id="12">Thêm vào giỏ hàng</button>
+            </div>
+        </section>
+
+
+
+
+        <section class="sp phongthuy">
+            <div>
+                <img src="images/phongthuy/binh-hut-loc-mau-vang-ve-vang-phuc-duc-tai-loc-28cm_02112022083735.jpg">
+                <h1>Bình hút lộc màu vàng vẽ Phúc Đức Tài Lộc 25cm</h1>
+                <p>
+                    1.290.000đ
+                    <s>1.600.000đ</s><span> -19%</span>
+                </p>
+                <button class="addgiohang" data-id="13">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/phongthuy/trung_phong_thuy.jpg">
+                <h1>Trứng phong thủy tài lộc Thuận Buồm Xuôi Gió</h1>
+                <p>
+                    2.500.000đ
+                </p>
+                <button class="addgiohang" data-id="14">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/phongthuy/bat-tu-bao-ngoc-cao-cap-mau-xanh-ngoc-co-to-1_15082022072841.jpg">
+                <h1>Bát tụ bảo ngọc cao cấp màu xanh ngọc cỡ to</h1>
+                <p>
+                    1.350.000đ
+                </p>
+                <button class="addgiohang" data-id="15">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/phongthuy/dia-trang-tri-bat-trang-truc-lam-that-hien-35cm_11082022025623.jpg">
+                <h1>Đĩa trang trí Bát Tràng Trúc Lâm Thất Hiền 35cm</h1>
+                <p>
+                    450.000đ
+                </p>
+                <button class="addgiohang" data-id="16">Thêm vào giỏ hàng</button>
+            </div>
+        </section>
+
+
+
+        <section class="sp tuonggom">
+            <div>
+                <img src="images/tuonggom/tuong-su-khong-minh-gia-cat-luong-men-ran-cao-60cm_28052020100551.jpg">
+                <h1>Tượng sứ Khổng Minh Gia Cát Lượng men rạn</h1>
+                <p>
+                    1.360.000đ
+                </p>
+                <button class="addgiohang" data-id="17">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/tuonggom/tuong-su-di-lac-ngoi-be-da-men-ran-cao-60cm-rong-70cm_27052020093512.jpg">
+                <h1>Tượng sứ Di lặc ngồi bệ đá men rạn cao 60cm</h1>
+                <p>
+                    4.700.000đ
+                </p>
+                <button class="addgiohang" data-id="18">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/tuonggom/tuong-su-tai-phat-loc-cao-36cm-1_27052020035455.jpg">
+                <h1>Tượng sứ Tài Phát Lộc men rạn cao 35cm</h1>
+                <p>
+                    1.200.000đ
+                </p>
+                <button class="addgiohang" data-id="19">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div>
+                <img src="images/tuonggom/tuong-su-phuc-loc-tho-men-ran-no-du-cao-30cm-1_27052020111544.jpg">
+                <h1>Tượng sứ Phúc Lộc Thọ men rạn cao 30cm</h1>
+                <p>
+                    1.870.000đ
+                </p>
+                <button class="addgiohang" data-id="20">Thêm vào giỏ hàng</button>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="page">
+            <div class="camon">
+                <a href="trangchu.html"><img src="images/logocuoi.png" id="logocuoi"></a>
+                <p>Đại Việt Gốm Sứ xin gửi lời tri ân sâu sắc đến Quý khách
+                    đã tin tưởng và lựa chọn chúng tôi. Từng sản phẩm gốm là
+                    kết tinh của đất mẹ, bàn tay nghệ nhân và tinh thần dân
+                    tộc. Và, chúng tôi tự hào khi được cùng quý khách giữ gìn
+                    những giá trị đẹp đẽ ấy trong cuộc sống hiện đại.</p>
+            </div>
+            <div class="phone">
+                <h2>Thông Tin Liên Hệ</h2>
+                <a><i class="fa-solid fa-phone-volume" id="call"></i> Điện thoại: 0888 668 998<br></a>
+                <a><i class="fa-solid fa-envelope" id="mail"></i> Email: daivietgomsu@gmail.com<br></a>
+                <a><i class="fa-solid fa-map-location-dot" id="diachi"></i> Địa chỉ: Số 49c, 30/4, Hưng Lợi, Ninh Kiều,
+                    Thành Phố Cần Thơ<br></a>
+                <a onclick="thongbao()"><img src="images/dathongbao.png" id="dathongbao"></a>
+            </div>
+            <div class="sitemap">
+                <h2>Sitemap</h2>
+                <a href="trangchu.html">Trang chủ<br></a>
+                <a href="gioithieu.html">Giới thiệu<br></a>
+                <a href="sanpham.html">Sản phẩm<br></a>
+                <a href="giohang.html">Giỏ hàng<br></a>
+                <a href="dangnhap.html">Đăng nhập<br></a>
+                <a href="dangky.html">Đăng ký<br></a>
+                <a href="lienhe.html">Liên hệ<br></a>
+            </div>
+        </div>
+        <div class="cuoitrang">
+            <hr>&copy;2025. Đại Việt Gốm Sứ chuyên cung cấp sản phẩm mỹ nghệ cao cấp
+            <a class="facebook"><i class="fa-brands fa-facebook"></i> </a>
+            <a class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <a href="#" class="back"><i class="fa-solid fa-circle-up"></i></a>
+
+    </footer>
+</body>
+
+</html>

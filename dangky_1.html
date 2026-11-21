@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đăng Ký</title>
+    <meta charset="UTF-8">
+    <link href="images/favicon.png" rel="icon" type="image/png">
+</head>
+
+<body>
+    <header>
+        <a href="trangchu.html">
+            <img src="images/LOGO.png" id="logo">
+        </a>
+        <div class="haidong">
+            <div class="search-box">
+                <input type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
+                <button>Tìm kiếm</button>
+            </div>
+            <nav class="menu">
+                <a href="trangchu.html">Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="sanpham.html">Sản phẩm</a>
+                <a href="dangnhap.html">Đăng nhập</a>
+                <a href="dangky.html">Đăng ký</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </nav>
+        </div>
+        <div class="dthoai">
+            <a href="lienhe.html" id="dthoai"><i class="fa-solid fa-phone-volume"></i></a>
+        </div>
+        <div class="call">
+            <a href="lienhe.html" id="call"><b>0888 668 998</b></a>
+            <a href="lienhe.html" id="call"><br>Hotline tư vấn miễn phí</a>
+        </div>
+        <div class="shop">
+            <a href="giohang.html" id="shopee"><i class="fa-solid fa-bag-shopping"></i><button
+                    class="slsp">0</button></a>
+        </div>
+    </header>
+    <main class="dangky">
+        <form onsubmit="return dang_ky()">
+            <fieldset>                 
+                    <table>
+                        <tr>
+                            <tr  colspan="2"><h1 id="dk">ĐĂNG KÝ</h1></tr> 
+                            <td> <label for="hoten"><i class="icon fa-solid fa-user"></i><strong>Họ và tên</strong></label></td>
+                            <td> <input type="text" name="hoten" id="hoten" placeholder="Nhập họ và tên"></td>     
+                        </tr>
+                        <tr>
+                                <td> <label for="email"><i class="icon fa-solid fa-envelope"></i><strong>Email</strong></label></td>
+                                <td> <input type="text" name="email" id="email" placeholder="Nhập Email"></td>     
+                        </tr>
+                        <tr>
+                            <td> <label for="phone"><i class="icon fa-solid fa-phone"></i><strong>Số điện thoại</strong></label></td>
+                            <td> <input type="text" name="phone" id="phone" placeholder="Nhập số điện thoại"></td>     
+                        </tr>
+                        <tr>
+                            <td> <label for="mk"><i class="icon fa-solid fa-lock"></i><strong>Mật khẩu</strong></label></td>
+                            <td> <input type="password" name="mk" id="mk" placeholder="Mật khẩu"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="dongy" id="dongy" value="yes">
+                                <label for="dongy"><strong class="maulink">Tôi đồng ý với <a href="#">Điều khoản & dịch vụ</a></strong></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="reset" onclick="location.reload(); return false;">Hủy</button> <!--Nếu bấm Hủy thì load lại trang-->
+                                <button type="submit">Đăng Ký</button>
+                            </td>
+
+                        </tr>
+                    </table>
+                    <div>
+                        <p align="center" class="taikhoan">Bạn đã có tài khoản? <strong><a href="dangnhap.html" href="#">Đăng nhập</a></strong></p>
+                        </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="page">
+            <div class="camon">
+                <a href="trangchu.html"><img src="images/logocuoi.png" id="logocuoi"></a>
+                <p>Đại Việt Gốm Sứ xin gửi lời tri ân sâu sắc đến Quý khách
+                    đã tin tưởng và lựa chọn chúng tôi. Từng sản phẩm gốm là
+                    kết tinh của đất mẹ, bàn tay nghệ nhân và tinh thần dân
+                    tộc. Và, chúng tôi tự hào khi được cùng quý khách giữ gìn
+                    những giá trị đẹp đẽ ấy trong cuộc sống hiện đại.</p>
+            </div>
+            <div class="phone">
+                <h2>Thông Tin Liên Hệ</h2>
+                <a><i class="fa-solid fa-phone-volume" id="call"></i> Điện thoại: 0888 668 998<br></a>
+                <a><i class="fa-solid fa-envelope" id="mail"></i> Email: daivietgomsu@gmail.com<br></a>
+                <a><i class="fa-solid fa-map-location-dot" id="diachi"></i> Địa chỉ: Số 49c, 30/4, Hưng Lợi, Ninh Kiều,
+                    Thành Phố Cần Thơ<br></a>
+                <a onclick="thongbao()"><img src="images/dathongbao.png" id="dathongbao"></a>
+            </div>
+            <div class="sitemap">
+                <h2>Sitemap</h2>
+                <a href="trangchu.html">Trang chủ<br></a>
+                <a href="gioithieu.html">Giới thiệu<br></a>
+                <a href="sanpham.html">Sản phẩm<br></a>
+                <a href="giohang.html">Giỏ hàng<br></a>
+                <a href="dangnhap.html">Đăng nhập<br></a>
+                <a href="dangky.html">Đăng ký<br></a>
+                <a href="lienhe.html">Liên hệ<br></a>
+            </div>
+        </div>
+        <div class="cuoitrang">
+            <hr>&copy;2025. Đại Việt Gốm Sứ chuyên cung cấp sản phẩm mỹ nghệ cao cấp
+            <a class="facebook"><i class="fa-brands fa-facebook"></i> </a>
+            <a class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <a href="#" class="back"><i class="fa-solid fa-circle-up"></i></a>
+
+    </footer>
+</body>

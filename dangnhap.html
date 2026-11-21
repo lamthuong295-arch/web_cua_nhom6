@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đăng nhập</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/vnd.microsoft" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="mystyle.css" type="text/css" rel="stylesheet">
+    <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="trangchu.html">
+            <img src="images/LOGO.png" id="logo">
+        </a>
+        <div class="haidong">
+            <div class="search-box">
+                <input type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
+                <button>Tìm kiếm</button>
+            </div>
+            <nav class="menu">
+                <a href="trangchu.html">Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="sanpham.html">Sản phẩm</a>
+                <a href="dangnhap.html">Đăng nhập</a>
+                <a href="dangky.html">Đăng ký</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </nav>
+        </div>
+        <div class="dthoai">
+            <a href="lienhe.html" id="dthoai"><i class="fa-solid fa-phone-volume"></i></a>
+        </div>
+        <div class="call">
+            <a href="lienhe.html" id="call"><b>0888 668 998</b></a>
+            <a href="lienhe.html" id="call"><br>Hotline tư vấn miễn phí</a>
+        </div>
+        <div class="shop">
+            <a href="giohang.html" id="shopee"><i class="fa-solid fa-bag-shopping"></i><button
+                    class="slsp">0</button></a>
+        </div>
+    </header>
+    <main class="dangnhap">
+        <form onsubmit="return dang_nhap()">
+            <fieldset>
+                <table>
+                    <tr>
+                    <tr colspan="2">
+                        <h1 id="dn">ĐĂNG NHẬP</h1>
+                    </tr>
+                    <td><label for="email"><strong>Email</strong></label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Nhập email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mk"><strong>Mật khẩu</strong></label></td>
+                        <td><input type="password" name="mk" id="mk" placeholder="Vui lòng nhập mật khẩu"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit">Đăng nhập</button>
+                            <button type="reset" onclick="location.reload(); return false;">Hủy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cuoi" colspan="2" style="text-align: center;"><strong>Bạn chưa có tài khoản?</strong>
+                            <a href="dangky.html"><strong>Đăng ký</strong></a>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="page">
+            <div class="camon">
+                <img src="images/logocuoi.png" id="logocuoi" width="300px">
+                <p>Đại Việt Gốm Sứ xin gửi lời tri ân sâu sắc đến Quý khách
+                    đã tin tưởng và lựa chọn chúng tôi. Từng sản phẩm gốm là
+                    kết tinh của đất mẹ, bàn tay nghệ nhân và tinh thần dân
+                    tộc. Và, chúng tôi tự hào khi được cùng quý khách giữ gìn
+                    những giá trị đẹp đẽ ấy trong cuộc sống hiện đại.</p>
+            </div>
+            <div class="phone">
+                <h1>Thông Tin Liên Hệ</h1>
+                <p><i class="fa-solid fa-phone-volume" id="call"></i> Điện thoại: 0888 668 998</p>
+                <p><i class="fa-solid fa-envelope" id="mail"></i> Email: daivietgomsu@gmail.com</p>
+                <p><i class="fa-solid fa-map-location-dot" id="diachi"></i> Địa chỉ: Số 49c, 30/4, Hưng Lợi, Ninh Kiều,
+                    Tp.Cần Thơ</p>
+                <a onclick="thongbao()"><img src="images/dathongbao.png" id="dathongbao"></a>
+            </div>
+            <div class="sitemap">
+                <h1>Sitemap</h1>
+                <a href="trangchu.html">Trang chủ<br></a>
+                <a href="gioithieu.html">Giới thiệu<br></a>
+                <a href="sanpham.html">Sản phẩm<br></a>
+                <a href="giohang.html">Giỏ hàng<br></a>
+                <a href="dangnhap.html">Đăng nhập<br></a>
+                <a href="dangky.html">Đăng ký<br></a>
+                <a href="lienhe.html">Liên hệ<br></a>
+            </div>
+        </div>
+        <div class="cuoi">
+            <hr>&copy;2025. Đại Việt Gốm Sứ chuyên cung cấp sản phẩm mỹ nghệ cao cấp
+            <a class="facebook"><i class="fa-brands fa-facebook"></i> </a>
+            <a class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <a href="#" class="back"><i class="fa-solid fa-circle-up"></i></a>
+
+    </footer>
+</body>
+
+</html>
